@@ -1,0 +1,19 @@
+.link-animation {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.link-animation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #18191f;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.link-animation:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
