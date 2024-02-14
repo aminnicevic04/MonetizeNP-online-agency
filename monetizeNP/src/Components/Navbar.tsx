@@ -48,13 +48,13 @@ function Navbar() {
             : ""
         }`}
       >
-        <div className="flex justify-between items-center text-base gap-8">
+        <div className="flex justify-between items-center text-base gap-8 ">
           <img
             src={logo}
             alt="Logo"
-            className="w-80 left-0 transform-gpu translate-y-0"
+            className="w-80 left-0 ml-10 transform-gpu translate-y-0"
           ></img>
-          <ul className="md:flex space-x-12 hidden">
+          <ul className="md:flex space-x-12 hidden ">
             {navItems.map(({ link, path }) => (
               <Link
                 to={path}
@@ -62,9 +62,9 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                className="uppercase block text-lg text-gray900 hover:text-brandPrimary font-medium cursor-pointer link-animation"
+                className="uppercase block text-lg text-gray900 hover:text-brandPrimary font-medium cursor-pointer"
               >
-                {link}
+                <h1 className="link-animation"> {link}</h1>
               </Link>
             ))}
           </ul>
