@@ -1,14 +1,18 @@
 import React from "react";
 import About1 from "../assets/about1.png";
+import A1 from "../assets/A1.png";
+import A2 from "../assets/A2.png";
+import A3 from "../assets/A3.png";
+import A4 from "../assets/A4.png";
 function About() {
   return (
     <div>
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8">
-        <div className="md:2-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+        <div className="md:w-full  flex flex-col md:flex-row justify-between items-center gap-12">
           <div>
             <img src={About1} alt=""></img>
           </div>
-          <div className="md:w-3/5 mx-auto">
+          <div className="md:w-4/5 mx-auto">
             <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5">
               The unseen of spending three years at Pixelgrade
             </h2>
@@ -35,10 +39,12 @@ function About() {
             </h2>
             <p>We reached here with our hard work and dedication</p>
           </div>
-          <div>
-            <div>
+
+          {/* stats */}
+          <div className="md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
+            <div className="space-y-8">
               <div className="flex items-center gap-4">
-                <img src="" alt=""></img>
+                <img src={A1} alt=""></img>
                 <div>
                   <h4 className="text-2xl text-neutralDGrey font-semibold ">
                     2,245,341
@@ -48,7 +54,28 @@ function About() {
               </div>
 
               <div className="flex items-center gap-4">
-                <img src="" alt=""></img>
+                <img src={A2} alt=""></img>
+                <div>
+                  <h4 className="text-2xl text-neutralDGrey font-semibold ">
+                    2,245,341
+                  </h4>
+                  <p>Members</p>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div className="flex items-center gap-4">
+                <img src={A3} alt=""></img>
+                <div>
+                  <h4 className="text-2xl text-neutralDGrey font-semibold ">
+                    2,245,341
+                  </h4>
+                  <p>Members</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <img src={A4} alt=""></img>
                 <div>
                   <h4 className="text-2xl text-neutralDGrey font-semibold ">
                     2,245,341
