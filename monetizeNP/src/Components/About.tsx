@@ -29,7 +29,7 @@ function About() {
         </div>
       </div>
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16">
-        <div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-1/2">
             <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3">
               Helping a local <br />
