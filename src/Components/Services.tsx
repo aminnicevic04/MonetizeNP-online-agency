@@ -1,10 +1,18 @@
-import React from "react";
 import logo1 from "../assets/Icons/logo-services1.png";
-import services1 from "../assets/services1.png";
-import services2 from "../assets/services2.png";
-import services3 from "../assets/services3.png";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 function Services() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  const animation = {
+    hidden: { opacity: 0, y: 70 },
+    visible: { opacity: 2, y: 0 },
+  };
+
   const services = [
     {
       id: 1,
@@ -30,17 +38,42 @@ function Services() {
   ];
   return (
     <div
+      ref={ref}
       className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto mp-20"
       id="service"
     >
-      <div className="text-center my-8">
-        <h2 className="text-5xl text-neutralDGrey font-semibold mb-2">
+      <motion.div
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={animation}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="text-center my-8"
+      >
+        <motion.h2
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={animation}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-5xl text-neutralDGrey font-semibold mb-2"
+        >
           Our clients
-        </h2>
-        <p className="text-neutralGrey text-2xl pt-4">
+        </motion.h2>
+        <motion.p
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={animation}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-neutralGrey text-2xl pt-4"
+        >
           We have been working with some Fortune 500+ clients
-        </p>
-        <div className="my-20 flex flex-wrap justify-between items-center gap-8">
+        </motion.p>
+        <motion.div
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={animation}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="my-20 flex flex-wrap justify-between items-center gap-8"
+        >
           <img src={logo1} alt=""></img>
           <img src={logo1} alt=""></img>
           <img src={logo1} alt=""></img>
@@ -48,19 +81,35 @@ function Services() {
           <img src={logo1} alt=""></img>
           <img src={logo1} alt=""></img>
           <img src={logo1} alt=""></img>
-        </div>
+        </motion.div>
 
         <div className="mt-20 md:w-1/2 mx-auto text-center">
-          <h2 className="text-4xl text-neutralDGrey font-semibold mb-3 pt-10">
+          <motion.h2
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-4xl text-neutralDGrey font-semibold mb-3 pt-10"
+          >
             Manage your entire community in a single system
-          </h2>
-          <p className="text-neutralGrey text-xl">
+          </motion.h2>
+          <motion.p
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-neutralGrey text-xl"
+          >
             Who is Nextcent suitable for?
-          </p>
+          </motion.p>
         </div>
         <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
           {services.map((service) => (
-            <div
+            <motion.div
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              variants={animation}
+              transition={{ duration: 0.6, delay: 0.6 }}
               key={service.id}
               className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-brandPrimary  transition-all duration-300 flex items-center justify-center h-full"
             >
@@ -79,10 +128,10 @@ function Services() {
                   {service.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

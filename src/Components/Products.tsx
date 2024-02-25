@@ -1,17 +1,39 @@
-import React from "react";
 import img1 from "../assets/product1.png";
 import company from "../assets/Icons/logo-services1.png";
 import img9 from "../assets/image 9.png";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Products() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  const animation = {
+    hidden: { opacity: 0, y: 70 },
+    visible: { opacity: 2, y: 0 },
+  };
+
   return (
-    <div id="product">
+    <div id="product" ref={ref}>
       <div className="px-4 lg:px-14 w-full mx-auto py-20">
         <div className="md:w-full flex flex-col md:flex-row justify-between items-center gap-32 mx-12">
-          <div>
+          <motion.div
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <img src={img1} alt=""></img>
-          </div>
-          <div className="md:w-3/5 mx-auto">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="md:w-3/5 mx-auto"
+          >
             <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5">
               How to design your site footer like we did
             </h2>
@@ -27,16 +49,28 @@ function Products() {
               ipsum id gravida.
             </p>
             <button className="btn-primary">Learn More</button>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* next */}
       <div className="px-16 lg:px-14 max-w-screen-3x1 w-full bg-neutralSilver py-16 md:py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="md:w-1/5 flex justify-center">
+          <motion.div
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="md:w-1/5 flex justify-center"
+          >
             <img src={img9} alt="" className="w-full h-auto"></img>
-          </div>
-          <div className="md:w-2/3">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="md:w-2/3"
+          >
             <div className="mx-auto md:mx-0">
               <p className="md:w-4/5 text-sm text-neutralGrey mb-8 leading-7">
                 Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
@@ -72,7 +106,7 @@ function Products() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -1,7 +1,18 @@
-import React from "react";
 import tesla from "../assets/image 9.png";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 function Blog() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  const animation = {
+    hidden: { opacity: 0, y: 70 },
+    visible: { opacity: 2, y: 0 },
+  };
+
   const blogs = [
     {
       id: 1,
@@ -19,25 +30,40 @@ function Blog() {
       img: tesla,
     },
   ];
+
   return (
     <div
+      ref={ref}
       className="px-4  lg:px-14 max-w-screen-2xl mx-auto my-12"
       id="testemonial"
     >
-      <div className="text-center md:w-1/2 mx-auto">
+      <motion.div
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={animation}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="text-center md:w-1/2 mx-auto"
+      >
         <h2 className="text-5xl text-neutral-700 font-semibold mb-4">
           Caring is the new marketing
         </h2>
         <p className="md:w-3/4 text-xl text-neutralGrey mb-8 mx-auto">
           The Nextcent blog is the best place to read about the latest joining
           the community, read about how our community are increasing their
-          membership income and lot's more.​
+          membership income and lot's more.
         </p>
-      </div>
+      </motion.div>
       {/* all blogs */}
       <div className="grid lg:grid-cols-3 sm-grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
         {blogs.map((blog) => (
-          <div key={blog.id} className="mx-auto relative mb-12  ">
+          <motion.div
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            key={blog.id}
+            className="mx-auto relative mb-12  "
+          >
             <img
               src={blog.img}
               alt=""
@@ -56,7 +82,7 @@ function Blog() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
