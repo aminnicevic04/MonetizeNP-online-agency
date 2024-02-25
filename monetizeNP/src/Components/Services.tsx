@@ -29,7 +29,10 @@ function Services() {
     },
   ];
   return (
-    <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto mp-20">
+    <div
+      className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto mp-20"
+      id="service"
+    >
       <div className="text-center my-8">
         <h2 className="text-5xl text-neutralDGrey font-semibold mb-2">
           Our clients

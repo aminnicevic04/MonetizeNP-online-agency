@@ -42,17 +42,17 @@ function Navbar() {
   return (
     <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
       <nav
-        className={`py-0 lg:px-14 px-4 ${
+        className={`py-0 lg:px-14  ${
           isSticky
             ? "sticky top-0 left-0 right-0 border-b bg-white duration-300"
             : ""
         }`}
       >
-        <div className="flex justify-between items-center text-base gap-8 ">
+        <div className="flex justify-between items-center text-base  ">
           <img
             src={logo}
             alt="Logo"
-            className="w-80 left-0 ml-10 transform-gpu translate-y-0"
+            className="w-32 md:w-72 ml-5 md:ml-10"
           ></img>
           <ul className="md:flex space-x-12 hidden ">
             {navItems.map(({ link, path }) => (
@@ -77,7 +77,7 @@ function Navbar() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-neutralDGrey focus:outline-none focus:text-gray-500 m-8"
+              className="text-neutralDGrey focus:outline-none focus:text-gray-500 "
             >
               {isMenuOpen ? (
                 <FaXmark className="h-6 w-6 mr-6" />
