@@ -103,7 +103,7 @@ function Services() {
             Who is Nextcent suitable for?
           </motion.p>
         </div>
-        <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
+        <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12  ">
           {services.map((service) => (
             <motion.div
               initial="hidden"
@@ -111,7 +111,7 @@ function Services() {
               variants={animation}
               transition={{ duration: 0.6, delay: 0.6 }}
               key={service.id}
-              className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-brandPrimary  transition-all duration-300 flex items-center justify-center h-full"
+              className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:scale-110 hover:border-b-4 hover:border-brandPrimary transition-all duration-100 flex items-center justify-center h-full "
             >
               <div>
                 <div className="bg-[#E8F5E9] mt-4 mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl ">

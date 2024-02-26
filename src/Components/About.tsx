@@ -35,7 +35,7 @@ function About() {
             animate={inView ? "visible" : "hidden"}
             variants={animation}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="md:w-4/5 px-12 pr-40 mx-auto "
+            className="md:w-4/5 px-12  mx-auto "
           >
             <h2 className="text-5xl text-neutralDGrey font-semibold mb-4 md:w-4/5">
               The unseen of spending three years at Pixelgrade

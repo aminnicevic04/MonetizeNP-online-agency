@@ -7,6 +7,7 @@ import Products from "./Components/Products";
 import Blog from "./Components/Blog";
 import Newssletter from "./Components/Newssletter";
 import Footer from "./Components/MyFooter";
+import Contact from "./Components/Contact";
 function App() {
   return (
     <>
@@ -16,7 +17,8 @@ function App() {
       <About />
       <Products />
       <Blog />
-      <Newssletter />
+      {/* <Newssletter /> */}
+      <Contact />
       <Footer />
     </>
   );

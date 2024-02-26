@@ -2,6 +2,7 @@ import { Carousel } from "flowbite-react";
 import baner1 from "../assets/slika1.png";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import Button from "@mui/material/Button";
 
 function Home() {
   const { ref, inView } = useInView({
@@ -46,7 +47,16 @@ function Home() {
                 Where to grow your business as a photographer: site or social
                 media?
               </motion.p>
-              <button className="btn-primary">register</button>
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  backgroundColor: "#4CAF4F",
+                  color: "white",
+                }}
+              >
+                Medium
+              </Button>
             </div>
           </div>
           {/*  dvojka */}
@@ -78,7 +88,16 @@ function Home() {
                 Where to grow your business as a photographer: site or social
                 media?
               </motion.p>
-              <button className="btn-primary">register</button>
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  backgroundColor: "#4CAF4F",
+                  color: "white",
+                }}
+              >
+                Medium
+              </Button>
             </div>
           </div>
           {/* trojka */}
@@ -110,7 +129,16 @@ function Home() {
                 Where to grow your business as a photographer: site or social
                 media?
               </motion.p>
-              <button className="btn-primary">register</button>
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  backgroundColor: "#4CAF4F",
+                  color: "white",
+                }}
+              >
+                Medium
+              </Button>
             </div>
           </div>
         </Carousel>

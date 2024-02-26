@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../assets/logo2.png";
 import { Link } from "react-scroll";
 import "./animation.css";
+import Button from "@mui/material/Button";
 
 import { FaXmark, FaBars } from "react-icons/fa6";
 
@@ -42,7 +43,7 @@ function Navbar() {
   return (
     <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
       <nav
-        className={`py-0 lg:px-14  ${
+        className={`py-0 lg:px-14 ${
           isSticky
             ? "sticky top-0 left-0 right-0 border-b bg-white duration-300"
             : ""
@@ -70,9 +71,16 @@ function Navbar() {
           </ul>
 
           <div className="space-x-12 hidden lg:flex items-center">
-            <button className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralGrey">
-              Contact US
-            </button>
+            <Button
+              variant="outlined"
+              size="large"
+              style={{
+                borderColor: "#4CAF4F",
+                color: "#4CAF4F",
+              }}
+            >
+              CONTAC US
+            </Button>
           </div>
           <div className="md:hidden">
             <button
@@ -88,7 +96,7 @@ function Navbar() {
           </div>
         </div>
         <div
-          className={`space-y-4 px-7 mt-40 py-10 bg-brandPrimary ${
+          className={`space-y-4 px-7 mt-14 py-10 bg-brandPrimary ${
             isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
           }`}
         >
