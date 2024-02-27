@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import logo from "../assets/logo2.png";
+import Logo2 from "../assets/monetize-logo(dark).png";
 import { Link } from "react-scroll";
 import "./animation.css";
 import Button from "@mui/material/Button";
+// import Button from "../Components/Parallax UI/MovingBorderButton";
 
 import { FaXmark, FaBars } from "react-icons/fa6";
 
@@ -41,17 +43,15 @@ function Navbar() {
   ];
 
   return (
-    <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
+    <header className="w-full bg-white md:bg-transparent fixed top-8 left-0 right-0">
       <nav
         className={`py-0 lg:px-14 ${
-          isSticky
-            ? "sticky top-0 left-0 right-0 border-b bg-white duration-300"
-            : ""
+          isSticky ? "sticky top-0 left-0 right-0 bg-dark1 duration-300" : ""
         }`}
       >
-        <div className="flex justify-between items-center text-base  ">
+        <div className="flex  justify-between items-center text-base py-4 ">
           <img
-            src={logo}
+            src={Logo2}
             alt="Logo"
             className="w-32 md:w-72 ml-5 md:ml-10"
           ></img>
@@ -63,7 +63,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                className="uppercase block text-lg text-gray900 hover:text-brandPrimary font-medium cursor-pointer"
+                className="uppercase block text-lg text-neutralSilver hover:text-brandPrimary font-medium cursor-pointer"
               >
                 <h1 className="link-animation"> {link}</h1>
               </Link>
@@ -76,11 +76,17 @@ function Navbar() {
               size="large"
               style={{
                 borderColor: "#4CAF4F",
-                color: "#4CAF4F",
+                color: "#F5F7FA",
               }}
             >
               CONTAC US
             </Button>
+            {/* <Button
+              borderRadius="1.75rem"
+              className="bg-neutralSilver dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 hover:border-white hover:bg-brandPrimary hover:text-neutralSilver transition-all "
+            >
+              CONTACT US
+            </Button> */}
           </div>
           <div className="md:hidden">
             <button

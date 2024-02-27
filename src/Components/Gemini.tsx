@@ -1,6 +1,6 @@
 import { useScroll, useTransform } from "framer-motion";
 import React from "react";
-import { GoogleGeminiEffect } from "../Components/UI/GoogleGeminiEffect";
+import { GoogleGeminiEffect } from "./Parallax UI/GoogleGeminiEffect";
 
 function Gemini() {
   const ref = React.useRef(null);

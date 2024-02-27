@@ -3,6 +3,7 @@ import baner1 from "../assets/slika1.png";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
+// import Button from "../Components/Button/Button";
 
 function Home() {
   const { ref, inView } = useInView({
@@ -16,10 +17,10 @@ function Home() {
   };
 
   return (
-    <div ref={ref} className="bg-neutralSilver" id="home">
-      <div className="px-4 lg:px-14 max-w-screen-2x1 mx-auto min-h-screen h-screen">
+    <div ref={ref} className="bg-dark1" id="home">
+      <div className="px-4 lg:px-14 max-w-screen-3xl mx-auto min-h-screen h-screen">
         <Carousel w-full mx-auto>
-          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
+          <div className="my-28 md:my-8 py-0 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
             <div className="mr-10">
               <img src={baner1} alt=""></img>
             </div>
@@ -30,7 +31,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-7xl font-semibold mb-4 text-neutralDGrey md:w-4/4 leading-snug  max-[400px]:text-4xl"
+                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
               >
                 Leassons and insights{" "}
                 <span className="text-brandPrimary leading-snug block">
@@ -42,7 +43,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-neutralGrey text-2xl mb-8"
+                className="text-neutralSilver text-2xl mb-8"
               >
                 Where to grow your business as a photographer: site or social
                 media?
@@ -57,6 +58,7 @@ function Home() {
               >
                 Medium
               </Button>
+              {/* <Button /> */}
             </div>
           </div>
           {/*  dvojka */}
@@ -71,7 +73,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-7xl font-semibold mb-4 text-neutralDGrey md:w-4/4 leading-snug  max-[400px]:text-4xl"
+                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
               >
                 Leassons and insights{" "}
                 <span className="text-brandPrimary leading-snug block">
@@ -83,7 +85,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-neutralGrey text-2xl mb-8"
+                className="text-neutralSilver text-2xl mb-8"
               >
                 Where to grow your business as a photographer: site or social
                 media?
@@ -112,7 +114,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-7xl font-semibold mb-4 text-neutralDGrey md:w-4/4 leading-snug  max-[400px]:text-4xl"
+                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
               >
                 Leassons and insights{" "}
                 <span className="text-brandPrimary leading-snug block">
@@ -124,7 +126,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-neutralGrey text-2xl mb-8"
+                className="text-neutralSilver text-2xl mb-8"
               >
                 Where to grow your business as a photographer: site or social
                 media?

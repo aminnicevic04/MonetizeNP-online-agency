@@ -16,8 +16,8 @@ function Products() {
   };
 
   return (
-    <div id="product" ref={ref}>
-      <div className="px-4 lg:px-14 w-full mx-auto py-20">
+    <div id="product" className="bg-dark1" ref={ref}>
+      <div className=" px-4 lg:px-14 w-full mx-auto py-20">
         <div className="md:w-full flex flex-col md:flex-row justify-between items-center gap-32 mx-12">
           <motion.div
             initial="hidden"
@@ -34,10 +34,10 @@ function Products() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="md:w-3/5 mx-auto"
           >
-            <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5">
+            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:w-4/5">
               How to design your site footer like we did
             </h2>
-            <p className="md:w-3/4 text-m text-neutralDGrey mb-8 px-auto">
+            <p className="md:w-3/4 text-m text-fontDark mb-8 px-auto">
               Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
               augue nec tincidunt molestie, massa nunc varius arcu, at
               scelerisque elit erat a magna. Donec quis erat at libero ultrices
@@ -53,7 +53,7 @@ function Products() {
         </div>
       </div>
       {/* next */}
-      <div className="px-16 lg:px-14 max-w-screen-3x1 w-full bg-neutralSilver py-16 md:py-8">
+      <div className="px-16 lg:px-14 max-w-screen-3x1 w-full bg-dark1 py-16 md:py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <motion.div
             initial="hidden"
@@ -72,7 +72,7 @@ function Products() {
             className="md:w-2/3"
           >
             <div className="mx-auto md:mx-0">
-              <p className="md:w-4/5 text-sm text-neutralGrey mb-8 leading-7">
+              <p className="md:w-4/5 text-sm text-fontDark mb-8 leading-7">
                 Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
                 lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
                 eu enim metus. Vivamus sed libero ornare, tristique quam in,
@@ -88,7 +88,7 @@ function Products() {
               <h5 className="text-brandPrimary text-xl font-semibold mb-2">
                 Hamdo Turkovic
               </h5>
-              <p className="text-base text-neutralGrey mb-8">Masazer zena</p>
+              <p className="text-base text-neutralSilver mb-8">Masazer zena</p>
               <div className="flex items-center gap-8 flex-wrap">
                 <img src={company} alt="" className="cursor-pointer"></img>
                 <img src={company} alt="" className="cursor-pointer"></img>

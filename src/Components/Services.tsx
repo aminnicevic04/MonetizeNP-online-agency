@@ -39,7 +39,7 @@ function Services() {
   return (
     <div
       ref={ref}
-      className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto mp-20"
+      className="bg-dark1 md:px-32 px-4 py-16 max-w-screen-3xl mx-auto mp-20"
       id="service"
     >
       <motion.div
@@ -54,7 +54,7 @@ function Services() {
           animate={inView ? "visible" : "hidden"}
           variants={animation}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-5xl text-neutralDGrey font-semibold mb-2"
+          className="text-5xl text-neutralSilver font-semibold mb-2"
         >
           Our clients
         </motion.h2>
@@ -63,7 +63,7 @@ function Services() {
           animate={inView ? "visible" : "hidden"}
           variants={animation}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-neutralGrey text-2xl pt-4"
+          className="text-fontDark text-2xl pt-4"
         >
           We have been working with some Fortune 500+ clients
         </motion.p>
@@ -89,7 +89,7 @@ function Services() {
             animate={inView ? "visible" : "hidden"}
             variants={animation}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl text-neutralDGrey font-semibold mb-3 pt-10"
+            className="text-4xl text-neutralSilver font-semibold mb-3 pt-10"
           >
             Manage your entire community in a single system
           </motion.h2>
@@ -98,7 +98,7 @@ function Services() {
             animate={inView ? "visible" : "hidden"}
             variants={animation}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-neutralGrey text-xl"
+            className="text-fontDark text-xl"
           >
             Who is Nextcent suitable for?
           </motion.p>
@@ -111,22 +111,20 @@ function Services() {
               variants={animation}
               transition={{ duration: 0.6, delay: 0.6 }}
               key={service.id}
-              className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:scale-110 hover:border-b-4 hover:border-brandPrimary transition-all duration-100 flex items-center justify-center h-full "
+              className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:scale-110 hover:border-b-4 hover:border-brandPrimary transition-all duration-100 flex items-center justify-center h-full bg-gray900"
             >
               <div>
-                <div className="bg-[#E8F5E9] mt-4 mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl ">
+                <div className="bg-brandPrimary mt-4 mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl ">
                   <img
                     src={service.image}
                     alt=""
                     className="ml-5 w-14 h-14"
                   ></img>
                 </div>
-                <h4 className="text-2xl font-bold text-neutralDGrey mb-2 px-2">
+                <h4 className="text-2xl font-bold text-neutralSilver mb-2 px-2">
                   {service.title}
                 </h4>
-                <p className="text-sm text-neutralDGrey">
-                  {service.description}
-                </p>
+                <p className="text-sm text-fontDark">{service.description}</p>
               </div>
             </motion.div>
           ))}
