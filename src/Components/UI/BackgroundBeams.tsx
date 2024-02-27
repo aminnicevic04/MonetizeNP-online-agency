@@ -10,7 +10,7 @@ function backgroundBeams() {
           Join the waitlist
         </h1>
         <p></p>
-        <p className="text-neutral-100 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
+        <p className="text-neutral-00 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
           Welcome to Monetize NP, the best transactional email service on the
           web. We provide reliable, scalable, and customizable email solutions
           for your business. Whether you&apos;re sending order confirmations,
@@ -20,7 +20,7 @@ function backgroundBeams() {
         <input
           type="text"
           placeholder="hi@manuarora.in"
-          className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
+          className="rounded-lg border border-neutral-800 focus:border-brandPrimary  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
         />
       </div>
       <BackgroundBeams />
@@ -134,10 +134,10 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
                 delay: Math.random() * 10,
               }}
             >
-              <stop stopColor="#18CCFC" stopOpacity="0"></stop>
-              <stop stopColor="#18CCFC"></stop>
-              <stop offset="32.5%" stopColor="#6344F5"></stop>
-              <stop offset="100%" stopColor="#AE48FF" stopOpacity="0"></stop>
+              <stop stopColor="#4CAF4F" stopOpacity="0"></stop>
+              <stop stopColor="#F5F7FA"></stop>
+              <stop offset="32.5%" stopColor="#4CAF4F"></stop>
+              <stop offset="100%" stopColor="#F5F7FA" stopOpacity="0"></stop>
             </motion.linearGradient>
           ))}
 
