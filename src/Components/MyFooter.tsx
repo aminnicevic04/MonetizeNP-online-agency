@@ -6,7 +6,7 @@ function MyFooter() {
   return (
     <Footer
       container
-      className="bg-neutral-950 border-t border-solid border-neutralSilver border-opacity-100 border-l-0 border-r-0 border-b-0 rounded-none "
+      className="bg-neutral-950 border-t border-solid border-brandPrimary border-opacity-100 border-l-0 border-r-0 border-b-0 rounded-none "
     >
       <Footer.Copyright href="#" by="MONETIZE NP™" year={2024} />
       <Footer.LinkGroup>

@@ -5,9 +5,10 @@ import Services from "./Components/Services";
 import About from "./Components/About";
 import Products from "./Components/Products";
 import Blog from "./Components/Blog";
-import Newssletter from "./Components/Newssletter";
+// import Newssletter from "./Components/Newssletter";
 import Footer from "./Components/MyFooter";
 import Contact from "./Components/Contact";
+import Gemini from "./Components/Gemini.tsx";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <Products />
       <Blog />
       {/* <Newssletter /> */}
+      <Gemini />
       <Contact />
       <Footer />
     </>
