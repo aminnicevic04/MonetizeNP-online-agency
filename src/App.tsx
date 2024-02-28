@@ -16,10 +16,10 @@ function App() {
       <Home />
       <Services />
       <About />
-      <Products />
       <Blog />
-      {/* <Newssletter /> */}
       <Gemini />
+      <Products />
+      {/* <Newssletter /> */}
       <Contact />
       <Footer />
     </>

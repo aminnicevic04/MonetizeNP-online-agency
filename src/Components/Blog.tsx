@@ -34,7 +34,7 @@ function Blog() {
   return (
     <div
       ref={ref}
-      className="px-4 bg-dark1 lg:px-14 max-w-screen-3xl mx-auto py-12"
+      className="px-4 bg-dark1 lg:px-14 max-w-screen-3xl mx-auto py-12 "
       id="testemonial"
     >
       <motion.div
@@ -78,7 +78,7 @@ function Blog() {
                   href="/"
                   className="font-bold text-brandPrimary  cursor-pointer"
                 >
-                  <span className="text-neutralSilver hover:text-brandPrimary">
+                  <span className="text-neutralSilver hover:text-brandPrimary ">
                     Read more{" "}
                   </span>
                   →
