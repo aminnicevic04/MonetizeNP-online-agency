@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import logo from "../assets/logo2.png";
+// import logo from "../assets/logo2.png";
 import Logo2 from "../assets/monetize-logo(dark).png";
 import { Link } from "react-scroll";
 import "./animation.css";

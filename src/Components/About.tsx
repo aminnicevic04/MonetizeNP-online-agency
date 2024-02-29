@@ -5,7 +5,7 @@ import A3 from "../assets/A3.png";
 import A4 from "../assets/A4.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const CounterAnimation: React.FC<{ target: number }> = ({ target }) => {
   const [count, setCount] = useState(0);

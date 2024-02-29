@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import baner1 from "../assets/slika1.png";
+// import baner1 from "../assets/slika1.png";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
@@ -22,7 +22,7 @@ function Home() {
   return (
     <div ref={ref} className="bg-dark1" id="home">
       <div className="px-4 lg:px-14 max-w-screen-3xl mx-auto min-h-screen h-screen ">
-        <Carousel w-full mx-auto>
+        <Carousel className="w-full mx-auto">
           <div className=" my-28 md:my-8 py-0 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
             <div className="mr-10">
               <img src={raketa} alt=""></img>
