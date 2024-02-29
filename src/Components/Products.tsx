@@ -16,8 +16,8 @@ function Products() {
   };
 
   return (
-    <div id="product" className="bg-dark1" ref={ref}>
-      <div className=" px-4 lg:px-14 w-full mx-auto py-20">
+    <div id="product" className="bg-dark1 py-32" ref={ref}>
+      <div className=" px-4 lg:px-14 w-full mx-auto pb-28">
         <div className="md:w-full flex flex-col md:flex-row justify-between items-center gap-32 mx-12">
           <motion.div
             initial="hidden"

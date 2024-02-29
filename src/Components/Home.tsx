@@ -4,6 +4,8 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
 // import Button from "../Components/Button/Button";
+import zena from "../assets/zena-tel.png";
+import raketa from "../assets/raketa.jpg";
 
 function Home() {
   const { ref, inView } = useInView({
@@ -22,7 +24,7 @@ function Home() {
         <Carousel w-full mx-auto>
           <div className=" my-28 md:my-8 py-0 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
             <div className="mr-10">
-              <img src={baner1} alt=""></img>
+              <img src={raketa} alt=""></img>
             </div>
 
             <div className="md:w-1/2 ml-10 ">
@@ -64,7 +66,7 @@ function Home() {
           {/*  dvojka */}
           <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
             <div className="mr-10">
-              <img src={baner1} alt=""></img>
+              <img src={zena} alt=""></img>
             </div>
 
             <div className="md:w-1/2 ml-10 ">

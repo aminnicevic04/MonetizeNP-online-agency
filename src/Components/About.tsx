@@ -5,6 +5,27 @@ import A3 from "../assets/A3.png";
 import A4 from "../assets/A4.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useEffect, useRef, useState } from "react";
+
+const CounterAnimation: React.FC<{ target: number }> = ({ target }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const speed = 1000; // change animation speed here
+    const inc = target / speed;
+
+    const timer = setInterval(() => {
+      setCount((prevCount) => {
+        const newCount = prevCount + inc;
+        return newCount >= target ? target : newCount;
+      });
+    }, 1);
+
+    return () => clearInterval(timer);
+  }, [target]);
+
+  return <div>{Math.ceil(count).toLocaleString()}</div>;
+};
 
 function About() {
   const { ref, inView } = useInView({
@@ -14,7 +35,7 @@ function About() {
 
   const animation = {
     hidden: { opacity: 0, y: 70 },
-    visible: { opacity: 2, y: 0 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -85,7 +106,7 @@ function About() {
                 <img src={A1} alt=""></img>
                 <div>
                   <h4 className="text-3xl text-neutralSilver font-semibold ">
-                    2,245,341
+                    <CounterAnimation target={100000} />
                   </h4>
                   <p className="text-brandPrimary">Members</p>
                 </div>
@@ -95,7 +116,7 @@ function About() {
                 <img src={A2} alt=""></img>
                 <div>
                   <h4 className="text-3xl text-neutralSilver font-semibold ">
-                    2,245,341
+                    <CounterAnimation target={100000} />
                   </h4>
                   <p className="text-brandPrimary">Members</p>
                 </div>
@@ -106,7 +127,7 @@ function About() {
                 <img src={A3} alt=""></img>
                 <div>
                   <h4 className="text-3xl text-neutralSilver font-semibold ">
-                    2,245,341
+                    <CounterAnimation target={100000} />
                   </h4>
                   <p className="text-brandPrimary">Members</p>
                 </div>
@@ -116,7 +137,7 @@ function About() {
                 <img src={A4} alt=""></img>
                 <div>
                   <h4 className="text-3xl text-neutralSilver font-semibold ">
-                    2,245,341
+                    <CounterAnimation target={100000} />
                   </h4>
                   <p className="text-brandPrimary">Members</p>
                 </div>
