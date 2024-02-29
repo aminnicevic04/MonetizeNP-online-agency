@@ -83,7 +83,7 @@ function Navbar() {
             </Button>
             {/* <Button
               borderRadius="1.75rem"
-              className="bg-neutralSilver dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 hover:border-white hover:bg-brandPrimary hover:text-neutralSilver transition-all "
+              className="bg-dark1 dark:bg-slate-900 text-brandPrimary dark:text-neutralSilver border-dark1 dark:border-slate-800  hover:text-neutralSilver transition-all duration-500"
             >
               CONTACT US
             </Button> */}

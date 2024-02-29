@@ -4,8 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
 // import Button from "../Components/Button/Button";
-import zena from "../assets/zena-tel.png";
+import zena from "../assets/2.jpg";
 import raketa from "../assets/raketa.jpg";
+import treca from "../assets/3.jpg";
 
 function Home() {
   const { ref, inView } = useInView({
@@ -27,7 +28,7 @@ function Home() {
               <img src={raketa} alt=""></img>
             </div>
 
-            <div className="md:w-1/2 ml-10 ">
+            <div className="md:w-1/2 ml-20 ">
               <motion.h1
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
@@ -35,9 +36,9 @@ function Home() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
               >
-                Leassons and insights{" "}
+                Vaše digitalno putovanje{" "}
                 <span className="text-brandPrimary leading-snug block">
-                  from 8 years
+                  počinje sa nama
                 </span>
               </motion.h1>
               <motion.p
@@ -45,12 +46,12 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-neutralSilver text-2xl mb-8"
+                className="text-neutralSilver text-2xl mb-8 pt-8"
               >
-                Where to grow your business as a photographer: site or social
-                media?
+                Da li ste spremni za uzlet svog brenda i na ostvarivanje porasta
+                u prodaji?
               </motion.p>
-              <Button
+              {/* <Button
                 variant="contained"
                 size="large"
                 style={{
@@ -59,7 +60,7 @@ function Home() {
                 }}
               >
                 Medium
-              </Button>
+              </Button> */}
               {/* <Button /> */}
             </div>
           </div>
@@ -69,7 +70,7 @@ function Home() {
               <img src={zena} alt=""></img>
             </div>
 
-            <div className="md:w-1/2 ml-10 ">
+            <div className="md:w-1/2 ml-20 ">
               <motion.h1
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
@@ -107,10 +108,10 @@ function Home() {
           {/* trojka */}
           <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
             <div className="mr-10">
-              <img src={baner1} alt=""></img>
+              <img src={treca} alt=""></img>
             </div>
 
-            <div className="md:w-1/2 ml-10 ">
+            <div className="md:w-1/2 ml-20 ">
               <motion.h1
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}

@@ -73,7 +73,7 @@ function About() {
           </motion.div>
         </div>
       </div>
-      <div className="px-12 lg:px-40 bg-dark1 py-28 ">
+      <div className="px-12 md:px-2 lg:px-12 bg-dark1 py-28 ">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-1/2">
             <motion.h2
