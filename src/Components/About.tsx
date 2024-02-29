@@ -11,7 +11,7 @@ const CounterAnimation: React.FC<{ target: number }> = ({ target }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const speed = 1000; // change animation speed here
+    const speed = 2000; // change animation speed here
     const inc = target / speed;
 
     const timer = setInterval(() => {
