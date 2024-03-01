@@ -1,4 +1,5 @@
-import img1 from "../assets/product1.png";
+import img1 from "../assets/laptop.png";
+import img2 from "../assets/seo.png";
 import company from "../assets/Icons/logo-services1.png";
 import img9 from "../assets/image 9.png";
 import { motion } from "framer-motion";
@@ -17,22 +18,48 @@ function Products() {
 
   return (
     <div id="product" className="bg-dark1 py-32" ref={ref}>
-      <div className=" px-4 lg:px-14 w-full mx-auto pb-28">
-        <div className="md:w-full flex flex-col md:flex-row justify-between items-center gap-32 mx-12">
+      <div className=" px-4 lg:px-14 w-5/6 mx-auto pb-28">
+        <div className="md:w-full flex flex-col-reverse md:flex-row-reverse justify-between items-center gap-4 mx-0">
           <motion.div
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={animation}
             transition={{ duration: 0.6, delay: 0.3 }}
+            className="md:w-4/5 mx-auto"
           >
-            <img src={img1} alt=""></img>
+            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:full text-right">
+              How to design your site footer like we did
+            </h2>
+            <p className="md:w-full text-m text-fontDark mb-8 text-right pl-40">
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+              augue nec tincidunt molestie, massa nunc varius arcu, at
+              scelerisque elit erat a magna. Donec quis erat at libero ultrices
+              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
+              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
+              commodo faucibus efficitur quis massa. Praesent felis est, finibus
+              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
+              ipsum id gravida.
+            </p>
           </motion.div>
           <motion.div
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={animation}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="md:w-3/5 mx-auto"
+          >
+            <img src={img1} alt=""></img>
+          </motion.div>
+        </div>
+      </div>
+      <div className=" px-4 lg:px-14 w-5/6 mx-auto pb-28">
+        <div className="md:w-full flex flex-col md:flex-row justify-between items-center gap-4 mx-0">
+          <motion.div
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="md:w-4/5 mx-auto"
           >
             <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:w-4/5">
               How to design your site footer like we did
@@ -48,12 +75,19 @@ function Products() {
               et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
               ipsum id gravida.
             </p>
-            <button className="btn-primary">Learn More</button>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={animation}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <img src={img2} alt=""></img>
           </motion.div>
         </div>
       </div>
       {/* next */}
-      <div className="px-16 lg:px-14 max-w-screen-3x1 w-full bg-dark1 py-16 md:py-8">
+      {/* <div className="px-16 lg:px-14 max-w-screen-3x1 w-full bg-dark1 py-16 md:py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <motion.div
             initial="hidden"
@@ -108,7 +142,7 @@ function Products() {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

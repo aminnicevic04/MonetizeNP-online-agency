@@ -19,7 +19,6 @@ function App() {
       <Blog />
       <Gemini />
       <Products />
-      {/* <Newssletter /> */}
       <Contact />
       <Footer />
     </>

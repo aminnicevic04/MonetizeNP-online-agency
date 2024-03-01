@@ -38,7 +38,7 @@ function Home() {
               >
                 Vaše digitalno putovanje{" "}
                 <span className="text-brandPrimary leading-snug block">
-                  počinje sa nama
+                  počinje ovde.
                 </span>
               </motion.h1>
               <motion.p
