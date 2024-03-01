@@ -1,7 +1,7 @@
 import img1 from "../assets/laptop.png";
 import img2 from "../assets/seo.png";
-import company from "../assets/Icons/logo-services1.png";
-import img9 from "../assets/image 9.png";
+// import company from "../assets/Icons/logo-services1.png";
+// import img9 from "../assets/image 9.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
