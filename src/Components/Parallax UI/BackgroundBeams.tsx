@@ -112,7 +112,7 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
           ></motion.path>
         ))}
         <defs>
-          {paths.map((index) => (
+          {paths.map((path, index) => (
             <motion.linearGradient
               id={`linearGradient-${index}`}
               x1="100%"
