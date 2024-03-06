@@ -93,16 +93,6 @@ function Home() {
                 Where to grow your business as a photographer: site or social
                 media?
               </motion.p>
-              <Button
-                variant="contained"
-                size="large"
-                style={{
-                  backgroundColor: "#4CAF4F",
-                  color: "white",
-                }}
-              >
-                Medium
-              </Button>
             </div>
           </div>
           {/* trojka */}
@@ -134,16 +124,6 @@ function Home() {
                 Where to grow your business as a photographer: site or social
                 media?
               </motion.p>
-              <Button
-                variant="contained"
-                size="large"
-                style={{
-                  backgroundColor: "#4CAF4F",
-                  color: "white",
-                }}
-              >
-                Medium
-              </Button>
             </div>
           </div>
         </Carousel>

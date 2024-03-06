@@ -66,37 +66,7 @@ function Services() {
       image: "/src/assets/ico1zb2.png",
     },
   ];
-  // const testimonials = [
-  //   {
-  //     quote:
-  //       "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-  //     name: "Charles Dickens",
-  //     title: "A Tale of Two Cities",
-  //   },
-  //   {
-  //     quote:
-  //       "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-  //     name: "William Shakespeare",
-  //     title: "Hamlet",
-  //   },
-  //   {
-  //     quote: "All that we see or seem is but a dream within a dream.",
-  //     name: "Edgar Allan Poe",
-  //     title: "A Dream Within a Dream",
-  //   },
-  //   {
-  //     quote:
-  //       "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-  //     name: "Jane Austen",
-  //     title: "Pride and Prejudice",
-  //   },
-  //   {
-  //     quote:
-  //       "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-  //     name: "Herman Melville",
-  //     title: "Moby-Dick",
-  //   },
-  // ];
+
   return (
     <div
       ref={ref}
@@ -143,7 +113,7 @@ function Services() {
           <img src={k6} alt="" className="w-28"></img>
         </motion.div>
         {/* ubaceno */}
-        <div className="px-12 md:px-2 lg:px-12 bg-dark1 py-28 ">
+        <div className="px-12 md:px-2 lg:px-12 bg-dark1 py-28">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="md:w-1/2">
               <motion.h2
@@ -216,48 +186,7 @@ function Services() {
             </motion.div>
           </div>
         </div>
-        <div className="mt-20 md:w-1/2 mx-auto text-center">
-          <motion.h2
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={animation}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl text-neutralSilver font-semibold mb-3 pt-10"
-          >
-            Manage your entire community in a single system
-          </motion.h2>
-          <motion.p
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={animation}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-fontDark text-xl"
-          >
-            Who is Nextcent suitable for?
-          </motion.p>
-        </div>
-        <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12  ">
-          {services.map((service) => (
-            <motion.div
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={animation}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              key={service.id}
-              className="px-6 py-8 text-center md:w-[320px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:scale-10 hover:border-b-4 hover:border-brandPrimary transition-all duration-100 flex items-center justify-center h-full bg-gray900"
-            >
-              <div>
-                <div className="flex justify-center align-middle">
-                  <img src={service.image} alt="" className="w-16 pb-4"></img>
-                </div>
-                <h4 className="text-2xl font-bold text-neutralSilver mb-2 px-2">
-                  {service.title}
-                </h4>
-                <p className="text-sm text-fontDark">{service.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+
         {/* infinitive slider */}
         {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-dark1 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards

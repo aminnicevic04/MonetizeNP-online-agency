@@ -34,9 +34,9 @@ function Navbar() {
   });
 
   const navItems = [
-    { link: "Home", path: "home" },
-    { link: "Service", path: "service" },
-    { link: "About", path: "about" },
+    { link: "Početna", path: "home" },
+    { link: "klijenti", path: "service" },
+    { link: "usluge", path: "about" },
     { link: "Product", path: "product" },
     { link: "Testemonial", path: "testemonial" },
     { link: "FAQ", path: "faq" },
@@ -72,10 +72,12 @@ function Navbar() {
 
           <div className="space-x-12 hidden lg:flex items-center">
             <Button
-              variant="outlined"
+              variant="contained"
               size="large"
               style={{
-                borderColor: "#4CAF4F",
+                backgroundColor: "#4CAF4F",
+                borderRadius: "7px",
+
                 color: "#F5F7FA",
               }}
             >

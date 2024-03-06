@@ -4,7 +4,7 @@ import Home from "./Components/Home";
 import Services from "./Components/Services";
 import About from "./Components/About";
 import Products from "./Components/Products";
-import Blog from "./Components/Blog";
+// import Blog from "./Components/Blog";
 // import Newssletter from "./Components/Newssletter";
 import Footer from "./Components/MyFooter";
 import Contact from "./Components/Contact";
@@ -16,7 +16,7 @@ function App() {
       <Home />
       <Services />
       <About />
-      <Blog />
+      {/* <Blog /> */}
       <Gemini />
       <Products />
       <Contact />
