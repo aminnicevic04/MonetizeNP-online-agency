@@ -4,6 +4,7 @@ import img2 from "../assets/seo.png";
 // import img9 from "../assets/image 9.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+// import Spline from "@splinetool/react-spline";
 
 function Products() {
   const { ref, inView } = useInView({
@@ -28,18 +29,18 @@ function Products() {
             className="md:w-4/5 mx-auto"
           >
             <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:full text-right">
-              How to design your site footer like we did
+              Važnost Savršeno oblikovane{" "}
+              <span className="text-brandPrimary">digitalne prisutnosti</span>
             </h2>
-            <p className="md:w-full text-m text-fontDark mb-8 text-right pl-40">
-              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
-              augue nec tincidunt molestie, massa nunc varius arcu, at
-              scelerisque elit erat a magna. Donec quis erat at libero ultrices
-              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
-              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
-              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
-              commodo faucibus efficitur quis massa. Praesent felis est, finibus
-              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
-              ipsum id gravida.
+            <p className="md:w-full text-xl text-fontDark mb-8 text-right md:pl-56 ">
+              Otkrijte put ka online uspehu uz naš tim za izradu web stranica i
+              aplikacija. Sa stručnim vođstvom našeg tima, vaša digitalna
+              prisutnost će biti savršeno oblikovana kako biste osvojili vaše
+              ciljno tržište. Bez obzira na vaše ciljeve i ideje, prepustite nam
+              da ih pretvorimo u funkcionalne digitalne proizvode koji će ne
+              samo privući pažnju, već i ostvariti vaše poslovne ciljeve na
+              internetu. Vaša digitalna strategija postaje stvarnost uz našu
+              ekspertizu i posvećenost.
             </p>
           </motion.div>
           <motion.div
@@ -49,6 +50,7 @@ function Products() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <img src={img1} alt=""></img>
+            {/* <Spline scene="https://prod.spline.design/n90-o1GkcBXNvgxj/scene.splinecode" /> */}
           </motion.div>
         </div>
       </div>
@@ -61,19 +63,21 @@ function Products() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="md:w-4/5 mx-auto"
           >
-            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:w-4/5">
-              How to design your site footer like we did
+            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:w-full">
+              Dominirajte Pretragom: Tajna Za{" "}
+              <span className="text-brandPrimary">SEO</span> Optimizaciju
             </h2>
-            <p className="md:w-3/4 text-m text-fontDark mb-8 px-auto">
-              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
-              augue nec tincidunt molestie, massa nunc varius arcu, at
-              scelerisque elit erat a magna. Donec quis erat at libero ultrices
-              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
-              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
-              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
-              commodo faucibus efficitur quis massa. Praesent felis est, finibus
-              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
-              ipsum id gravida.
+            <p className="md:w-3/4 text-xl text-fontDark mb-8 px-auto">
+              Naš tim programera ne samo da izrađuje fantastične web stranice i
+              aplikacije, već se takođe brine da vaša digitalna prisutnost bude
+              primećena na mreži. Sa našom stručnošću u SEO optimizaciji, vaše
+              stranice i aplikacije će zauzeti vrhunske pozicije u pretrazi. Bez
+              obzira na to da li potencijalni klijenti traže proizvode, usluge
+              ili informacije, vaša digitalna platforma će biti među prvima koje
+              će im se prikazati. Uz našu posvećenost SEO optimizaciji,
+              garantujemo da ćete se istaknuti u digitalnom svetu i bolje
+              rezultate na internetu, što će unaprediti vašu vidljivost i
+              poslovanje.
             </p>
           </motion.div>
           <motion.div

@@ -37,9 +37,7 @@ function Navbar() {
     { link: "Početna", path: "home" },
     { link: "klijenti", path: "service" },
     { link: "usluge", path: "about" },
-    { link: "Product", path: "product" },
-    { link: "Testemonial", path: "testemonial" },
-    { link: "FAQ", path: "faq" },
+    { link: "seo", path: "product" },
   ];
 
   return (
@@ -55,7 +53,7 @@ function Navbar() {
             alt="Logo"
             className="w-32 md:w-72 ml-5 md:ml-10"
           ></img>
-          <ul className="md:flex space-x-12 hidden ">
+          <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
               <Link
                 to={path}
@@ -63,25 +61,26 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                className="uppercase block text-lg text-neutralSilver hover:text-brandPrimary font-medium cursor-pointer"
+                className="uppercase block text-lg text-white font-medium cursor-pointer"
               >
-                <h1 className="link-animation"> {link}</h1>
+                <h1 className="hover:text-brandPrimary tracking-wider hover:text-lg transform hover:scale-110  transition duration-300">
+                  {link}
+                </h1>
               </Link>
             ))}
           </ul>
 
-          <div className="space-x-12 hidden lg:flex items-center">
+          <div className="space-x-12 hidden lg:flex items-center tracking-wider">
             <Button
               variant="contained"
               size="large"
               style={{
                 backgroundColor: "#4CAF4F",
                 borderRadius: "7px",
-
                 color: "#F5F7FA",
               }}
             >
-              CONTAC US
+              KONTAKT
             </Button>
             {/* <Button
               borderRadius="1.75rem"

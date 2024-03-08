@@ -43,30 +43,6 @@ function Services() {
     visible: { opacity: 2, y: 0 },
   };
 
-  const services = [
-    {
-      id: 1,
-      title: "Membership Organisations",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/ico3zb.png",
-    },
-    {
-      id: 2,
-      title: "National Associations",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/ico1zb.png",
-    },
-    {
-      id: 3,
-      title: "Clubs And Groups",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/ico1zb2.png",
-    },
-  ];
-
   return (
     <div
       ref={ref}
@@ -115,6 +91,7 @@ function Services() {
         {/* ubaceno */}
         <div className="px-12 md:px-2 lg:px-12 bg-dark1 py-28">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            {/* Pružamo rast i uspeh vašem online biznisu. */}
             <div className="md:w-1/2">
               <motion.h2
                 initial="hidden"
@@ -123,16 +100,17 @@ function Services() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-5xl text-neutralSilver font-semibold mb-4 md:w-2/3"
               >
-                Helping a local <br />
+                Osiguravamo rast
+                <br />
                 <span className="text-brandPrimary">
-                  business reinvent itself
+                  online prisutnosti <br />i prodaje.
                 </span>
               </motion.h2>
               <p className="text-xl text-neutralSilver">
-                We reached here with our hard work and dedication
+                Naš tim garantuje povećanje lajkova, pregleda i prodaje
+                proizvoda.
               </p>
             </div>
-
             {/* stats */}
             <motion.div
               initial="hidden"
@@ -186,15 +164,6 @@ function Services() {
             </motion.div>
           </div>
         </div>
-
-        {/* infinitive slider */}
-        {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-dark1 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
-            items={testimonials}
-            direction="right"
-            speed="slow"
-          />
-        </div> */}
       </motion.div>
     </div>
   );
