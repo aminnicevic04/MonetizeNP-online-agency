@@ -37,7 +37,7 @@ function About() {
       id: 3,
       title: "Fotografisanje i Snimanje",
       description:
-        "Snimamo profesionalne fotografije i video sadržaje koji će istaći vaše proizvode i usluge na društvenim mrežama.",
+        "Snimamo profesionalne fotografije i video sadržaje kamerom i dronom koji će istaći vaše proizvode i usluge na društvenim mrežama.",
       image: "/src/assets/ico1zb2.png",
     },
   ];

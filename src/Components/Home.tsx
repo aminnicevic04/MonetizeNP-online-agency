@@ -76,11 +76,11 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
+                className="text-6xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
               >
-                Leassons and insights{" "}
+                Vaša popularnost počinje na{" "}
                 <span className="text-brandPrimary leading-snug block">
-                  from 9 years
+                  društvenim mrežama
                 </span>
               </motion.h1>
               <motion.p
@@ -90,8 +90,8 @@ function Home() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-neutralSilver text-2xl mb-8"
               >
-                Where to grow your business as a photographer: site or social
-                media?
+                Naš tim kreatora sadržaja će vam pomoći da svi čuju priču vašeg
+                brenda.
               </motion.p>
             </div>
           </div>
@@ -109,9 +109,9 @@ function Home() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
               >
-                Leassons and insights{" "}
+                Vaša prodaja počinje na{" "}
                 <span className="text-brandPrimary leading-snug block">
-                  from 10 years
+                  dobrom websajtu
                 </span>
               </motion.h1>
               <motion.p
@@ -121,8 +121,8 @@ function Home() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-neutralSilver text-2xl mb-8"
               >
-                Where to grow your business as a photographer: site or social
-                media?
+                Naš tim programera će vam pomoći da svoju prodaju podignete na
+                veći nivo brzom web prodavnicom.
               </motion.p>
             </div>
           </div>
