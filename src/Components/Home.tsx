@@ -2,7 +2,6 @@ import { Carousel } from "flowbite-react";
 // import baner1 from "../assets/slika1.png";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import Button from "@mui/material/Button";
 // import Button from "../Components/Button/Button";
 import zena from "../assets/2.jpg";
 import raketa from "../assets/raketa.jpg";
@@ -34,7 +33,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
+                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug max-[700px]:text-4xl"
               >
                 Vaše digitalno putovanje{" "}
                 <span className="text-brandPrimary leading-snug block">
@@ -46,7 +45,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-neutralSilver text-2xl mb-8 pt-8"
+                className="text-neutralSilver text-2xl mb-8 pt-8 max-md:text-lg"
               >
                 Da li ste spremni za uzlet svog brenda i na ostvarivanje porasta
                 u prodaji?
@@ -76,7 +75,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-6xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
+                className="text-6xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[700px]:text-4xl"
               >
                 Vaša popularnost počinje na{" "}
                 <span className="text-brandPrimary leading-snug block">
@@ -88,7 +87,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-neutralSilver text-2xl mb-8"
+                className="text-neutralSilver text-2xl mb-8  max-md:text-lg"
               >
                 Naš tim kreatora sadržaja će vam pomoći da svi čuju priču vašeg
                 brenda.
@@ -107,7 +106,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[400px]:text-4xl"
+                className="text-7xl font-semibold mb-4 text-neutralSilver md:w-4/4 leading-snug  max-[700px]:text-4xl"
               >
                 Vaša prodaja počinje na{" "}
                 <span className="text-brandPrimary leading-snug block">
@@ -119,7 +118,7 @@ function Home() {
                 animate={inView ? "visible" : "hidden"}
                 variants={animation}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-neutralSilver text-2xl mb-8"
+                className="text-neutralSilver text-2xl mb-8  max-md:text-lg"
               >
                 Naš tim programera će vam pomoći da svoju prodaju podignete na
                 veći nivo brzom web prodavnicom.

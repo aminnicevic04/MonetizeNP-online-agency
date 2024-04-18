@@ -43,7 +43,7 @@ function About() {
   ];
 
   return (
-    <div id="about" className="bg-dark1" ref={ref}>
+    <div id="about" className="p-3 bg-dark1" ref={ref}>
       <div className=" md:w-1/2 mx-auto text-center ">
         <motion.h2
           initial="hidden"
@@ -87,7 +87,7 @@ function About() {
         ))}
       </div>
       <div className="px-4 lg:px-14 w-full mx-auto pt-10 pb-10">
-        <div className="md:w-full  flex flex-col md:flex-row justify-between items-center gap-12">
+        <div className="md:w-full  flex flex-col lg:flex-row justify-between items-center gap-12">
           <motion.div
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -102,13 +102,13 @@ function About() {
             animate={inView ? "visible" : "hidden"}
             variants={animation}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="md:w-4/5 px-12  mx-auto "
+            className="md:w-4/5 px-12  mx-auto max-md:px-0"
           >
             <h2 className="text-5xl text-neutralSilver font-semibold mb-4 md:w-4/5">
               Dizajnirajte Vaš <span className="text-brandPrimary">Online</span>{" "}
               Uspeh
             </h2>
-            <p className="md:w-3/4 text-xl text-fontDark mb-8">
+            <p className="md:w-3/4 text-xl text-fontDark mb-8 max-md:text-lg">
               Uronite duboko u svet kreativnosti sa našim timom stručnjaka. Od
               početne ideje do konačne realizacije, nudimo sveobuhvatno rešenje
               za vaš brend. Naša sposobnost da osmislimo originalne koncepte
