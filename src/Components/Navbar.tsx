@@ -75,9 +75,10 @@ function Navbar() {
               variant="contained"
               size="large"
               style={{
-                backgroundColor: "#4CAF4F",
-                borderRadius: "7px",
-                color: "#F5F7FA",
+                backgroundColor: "transparent",
+                border: "1px solid #4CAF4F",
+                borderRadius: "19px",
+                color: "white",
               }}
             >
               KONTAKT
