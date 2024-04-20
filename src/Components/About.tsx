@@ -50,7 +50,7 @@ function About() {
           animate={inView ? "visible" : "hidden"}
           variants={animation}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-4xl text-neutralSilver font-semibold mb-3 pt-10"
+          className="text-4xl text-neutralSilver font-semibold mb-3 pt-10 max-sm:text-3xl"
         >
           Kreiramo vašu digitalnu viziju - stručno i predano.
         </motion.h2>
@@ -59,7 +59,7 @@ function About() {
           animate={inView ? "visible" : "hidden"}
           variants={animation}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-fontDark text-xl"
+          className="text-fontDark text-xl max-sm:text-lg"
         >
           Osigurajte sve što vam treba uz naš tim.
         </motion.p>
@@ -104,7 +104,7 @@ function About() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="md:w-4/5 px-12  mx-auto max-md:px-0"
           >
-            <h2 className="text-5xl text-neutralSilver font-semibold mb-4 md:w-4/5">
+            <h2 className="text-5xl text-neutralSilver font-semibold mb-4 md:w-4/5 max-sm:text-4xl">
               Dizajnirajte Vaš <span className="text-brandPrimary">Online</span>{" "}
               Uspeh
             </h2>

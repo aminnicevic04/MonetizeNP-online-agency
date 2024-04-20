@@ -61,7 +61,7 @@ function Services() {
           animate={inView ? "visible" : "hidden"}
           variants={animation}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-5xl text-neutralSilver font-semibold mb-2 text-center"
+          className="text-5xl text-neutralSilver font-semibold mb-2 text-center max-sm:text-3xl"
         >
           Naši zadovoljni klijenti
         </motion.h2>
@@ -70,7 +70,7 @@ function Services() {
           animate={inView ? "visible" : "hidden"}
           variants={animation}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-fontDark text-2xl pt-4 text-center"
+          className="text-fontDark text-2xl pt-4 text-center max-sm:text-lg"
         >
           Naš MonetizeNP team je radio za preko 50 zadovoljnih klijenata
         </motion.p>
@@ -81,15 +81,39 @@ function Services() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="my-20 flex flex-wrap justify-between items-center gap-4"
         >
-          <img src={k1} alt="" className="w-28"></img>
-          <img src={k2} alt="" className="w-32"></img>
-          <img src={k3} alt="" className="w-32"></img>
-          <img src={k4} alt="" className="w-40"></img>
-          <img src={k5} alt="" className="w-48"></img>
-          <img src={k6} alt="" className="w-28"></img>
+          <img
+            src={k1}
+            alt=""
+            className="aspect-[3/2] w-40 object-contain"
+          ></img>
+          <img
+            src={k2}
+            alt=""
+            className="aspect-[3/2] w-40 object-contain"
+          ></img>
+          <img
+            src={k3}
+            alt=""
+            className="aspect-[3/2] w-40 object-contain"
+          ></img>
+          <img
+            src={k4}
+            alt=""
+            className="aspect-[3/2] w-40 object-contain"
+          ></img>
+          <img
+            src={k5}
+            alt=""
+            className="aspect-[3/2] w-40 object-contain"
+          ></img>
+          <img
+            src={k6}
+            alt=""
+            className="aspect-[3/2] w-40 object-contain"
+          ></img>
         </motion.div>
         {/* ubaceno */}
-        <div className="px-12 md:px-2 lg:px-12 bg-dark1 py-28 max-sm:px-3">
+        <div className="px-12 md:px-2 lg:px-12 bg-dark1 lg:py-28 max-sm:px-3">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-8 max-lg:text-center">
             {/* Pružamo rast i uspeh vašem online biznisu. */}
             <div className="">

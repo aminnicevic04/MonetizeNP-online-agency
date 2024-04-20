@@ -18,8 +18,8 @@ function Products() {
   };
 
   return (
-    <div id="product" className="bg-dark1 py-32" ref={ref}>
-      <div className=" px-4 lg:px-14 w-5/6 mx-auto pb-28">
+    <div id="product" className="bg-dark1 py-32 max-sm:py-10" ref={ref}>
+      <div className="lg:px-14 w-5/6 mx-auto pb-28">
         <div className="md:w-full flex flex-col-reverse md:flex-row-reverse justify-between items-center gap-4 mx-0">
           <motion.div
             initial="hidden"
@@ -28,11 +28,11 @@ function Products() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="md:w-4/5 mx-auto"
           >
-            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:full text-right">
+            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:full lg:text-right max-sm:text-3xl">
               Važnost Savršeno oblikovane{" "}
               <span className="text-brandPrimary">digitalne prisutnosti</span>
             </h2>
-            <p className="md:w-full text-xl text-fontDark mb-8 text-right md:pl-56 ">
+            <p className="md:w-full text-xl text-fontDark mb-8 lg:text-right md:pl-56 max-sm:text-lg">
               Otkrijte put ka online uspehu uz naš tim za izradu web stranica i
               aplikacija. Sa stručnim vođstvom našeg tima, vaša digitalna
               prisutnost će biti savršeno oblikovana kako biste osvojili vaše
@@ -54,7 +54,7 @@ function Products() {
           </motion.div>
         </div>
       </div>
-      <div className=" px-4 lg:px-14 w-5/6 mx-auto pb-28">
+      <div className="lg:px-14 w-5/6 mx-auto pb-28">
         <div className="md:w-full flex flex-col md:flex-row justify-between items-center gap-4 mx-0">
           <motion.div
             initial="hidden"
@@ -63,11 +63,11 @@ function Products() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="md:w-4/5 mx-auto"
           >
-            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:w-full">
+            <h2 className="text-4xl text-neutralSilver font-semibold mb-4 md:w-full max-sm:text-3xl">
               Dominirajte Pretragom: Tajna Za{" "}
               <span className="text-brandPrimary">SEO</span> Optimizaciju
             </h2>
-            <p className="md:w-3/4 text-xl text-fontDark mb-8 px-auto">
+            <p className="md:w-3/4 text-xl text-fontDark mb-8 px-auto max-sm:text-lg">
               Naš tim programera ne samo da izrađuje fantastične web stranice i
               aplikacije, već se takođe brine da vaša digitalna prisutnost bude
               primećena na mreži. Sa našom stručnošću u SEO optimizaciji, vaše

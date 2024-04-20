@@ -22,12 +22,16 @@ function Home() {
     <div ref={ref} className="bg-dark1" id="home">
       <div className="px-4 lg:px-14 max-w-screen-3xl mx-auto min-h-screen h-screen ">
         <Carousel className="w-full mx-auto">
-          <div className=" my-28 md:my-8 py-0 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
-            <div className="mr-10">
-              <img src={raketa} alt=""></img>
+          <div className="md:my-8 py-0 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
+            <div className="">
+              <img
+                src={raketa}
+                alt=""
+                className="max-sm:h-80 max-sm:w-full max-sm:overflow-auto"
+              ></img>
             </div>
 
-            <div className="md:w-1/2 ml-20 ">
+            <div className="md:w-1/2 lg:ml-20 ml-0 max-lg:text-center">
               <motion.h1
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
@@ -64,12 +68,16 @@ function Home() {
             </div>
           </div>
           {/*  dvojka */}
-          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
-            <div className="mr-10">
-              <img src={zena} alt=""></img>
+          <div className="md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
+            <div className="">
+              <img
+                src={zena}
+                alt=""
+                className="max-sm:h-80 max-sm:w-full max-sm:overflow-auto"
+              ></img>
             </div>
 
-            <div className="md:w-1/2 ml-20 ">
+            <div className="md:w-1/2 lg:ml-20 ml-0 max-lg:text-center">
               <motion.h1
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
@@ -95,12 +103,16 @@ function Home() {
             </div>
           </div>
           {/* trojka */}
-          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
-            <div className="mr-10">
-              <img src={treca} alt=""></img>
+          <div className="md:my-8 flex flex-col md:flex-row-reverse items-center justify-between gap-12 max-sm:gap-9 ">
+            <div className="">
+              <img
+                src={treca}
+                alt=""
+                className="max-sm:h-80 max-sm:w-full max-sm:overflow-auto"
+              ></img>
             </div>
 
-            <div className="md:w-1/2 ml-20 ">
+            <div className="md:w-1/2 lg:ml-20 ml-0 max-lg:text-center">
               <motion.h1
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
