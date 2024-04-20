@@ -18,11 +18,11 @@ function Contact() {
           631601002. Mi smo tu da vam pomognemo. Vaše zadovoljstvo je naš
           prioritet.
         </p>
-        <input
+        {/* <input
           type="text"
           placeholder="monetizenp@gmail.com"
           className="rounded-lg border border-neutral-800 focus:border-white w-3/5 relative z-10 mt-4 bg-neutral-950 placeholder:text-neutral-700 text-neutralSilver block mx-auto"
-        />
+        /> */}
       </div>
       <BackgroundBeams />
     </div>
