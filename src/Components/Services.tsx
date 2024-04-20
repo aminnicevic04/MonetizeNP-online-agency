@@ -1,8 +1,8 @@
 import k1 from "../assets/k1.png";
 import k2 from "../assets/k2.png";
-import k3 from "../assets/Avenia.png";
+import k3 from "../assets/eduka-logo.png";
 import k4 from "../assets/k4.png";
-import k5 from "../assets/k5.png";
+import k5 from "../assets/teferic-logo.png";
 import k6 from "../assets/k6.png";
 import A1 from "../assets/flw.png";
 import A2 from "../assets/like.png";
@@ -83,9 +83,9 @@ function Services() {
         >
           <img src={k1} alt="" className="w-28"></img>
           <img src={k2} alt="" className="w-32"></img>
-          <img src={k3} alt="" className="w-36"></img>
+          <img src={k3} alt="" className="w-32"></img>
           <img src={k4} alt="" className="w-40"></img>
-          <img src={k5} alt="" className="w-40"></img>
+          <img src={k5} alt="" className="w-48"></img>
           <img src={k6} alt="" className="w-28"></img>
         </motion.div>
         {/* ubaceno */}
